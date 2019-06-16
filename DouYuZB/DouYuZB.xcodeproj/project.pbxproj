@@ -23,6 +23,8 @@
 		DB86818322B618F800B20CB8 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86818122B618F800B20CB8 /* CollectionHeaderView.xib */; };
 		DB86818622B6207B00B20CB8 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86818422B6207B00B20CB8 /* CollectionNormalCell.swift */; };
 		DB86818722B6207B00B20CB8 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86818522B6207B00B20CB8 /* CollectionNormalCell.xib */; };
+		DB86818A22B654A700B20CB8 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */; };
+		DB86818B22B654A700B20CB8 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */; };
 		DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */; };
 		DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512422B25B5B00D9A8BC /* Assets.xcassets */; };
 		DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512622B25B5B00D9A8BC /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 		DB86818122B618F800B20CB8 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		DB86818422B6207B00B20CB8 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		DB86818522B6207B00B20CB8 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		DBB2511A22B25B4200D9A8BC /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB2512422B25B5B00D9A8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				DB86817A22B4FE1800B20CB8 /* PageContentView.swift */,
 				DB86818422B6207B00B20CB8 /* CollectionNormalCell.swift */,
 				DB86818522B6207B00B20CB8 /* CollectionNormalCell.xib */,
+				DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */,
+				DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */,
 				DB86816F22B3ACAC00B20CB8 /* Live.storyboard in Resources */,
 				DB86816E22B3ACAC00B20CB8 /* Profile.storyboard in Resources */,
+				DB86818B22B654A700B20CB8 /* CollectionPrettyCell.xib in Resources */,
 				DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */,
 				DB86816D22B3ACAC00B20CB8 /* Follow.storyboard in Resources */,
 			);
@@ -372,6 +379,7 @@
 				DB86817F22B601E900B20CB8 /* RecommendViewController.swift in Sources */,
 				DB86817B22B4FE1800B20CB8 /* PageContentView.swift in Sources */,
 				DB86818622B6207B00B20CB8 /* CollectionNormalCell.swift in Sources */,
+				DB86818A22B654A700B20CB8 /* CollectionPrettyCell.swift in Sources */,
 				DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */,
 				DB86817222B3AD4200B20CB8 /* HomeViewController.swift in Sources */,
 				DB86817922B4E74500B20CB8 /* Common.swift in Sources */,
