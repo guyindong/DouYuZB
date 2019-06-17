@@ -21,7 +21,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
     
     // MARK: - 懒加载属性
-    private lazy var recommendVM : RecommendVIewModel = RecommendVIewModel()
+    private lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     private lazy var collectionView : UICollectionView = { [unowned self] in
        
         // 1.创建布局
@@ -71,7 +71,9 @@ extension RecommendViewController {
 // MARK: - 请求数据
 extension RecommendViewController {
     private func loadDate() {
-        recommendVM.requestData()
+        recommendVM.requestData {
+            self.collectionView.reloadData()
+        }
     }
 }
 
@@ -79,13 +81,11 @@ extension RecommendViewController {
 extension RecommendViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // 1.定义Cell
@@ -100,7 +100,12 @@ extension RecommendViewController : UICollectionViewDataSource, UICollectionView
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出section的HeaderView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        
+        // 2.取出模型
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
+        
+        
         return headerView
     }
     

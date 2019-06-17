@@ -27,7 +27,7 @@
 		DB86818A22B654A700B20CB8 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */; };
 		DB86818B22B654A700B20CB8 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */; };
 		DB8681AD22B73F9B00B20CB8 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681AC22B73F9B00B20CB8 /* NetworkTools.swift */; };
-		DB8681B022B7444D00B20CB8 /* RecommendVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681AF22B7444D00B20CB8 /* RecommendVIewModel.swift */; };
+		DB8681B022B7444D00B20CB8 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681AF22B7444D00B20CB8 /* RecommendViewModel.swift */; };
 		DB8681B222B74ACF00B20CB8 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B122B74ACF00B20CB8 /* NSDate-Extension.swift */; };
 		DB8681B422B76EB300B20CB8 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B322B76EB300B20CB8 /* AnchorGroup.swift */; };
 		DB8681B622B7823D00B20CB8 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B522B7823D00B20CB8 /* AnchorModel.swift */; };
@@ -59,7 +59,7 @@
 		DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		DB8681AC22B73F9B00B20CB8 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
-		DB8681AF22B7444D00B20CB8 /* RecommendVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendVIewModel.swift; sourceTree = "<group>"; };
+		DB8681AF22B7444D00B20CB8 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		DB8681B122B74ACF00B20CB8 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		DB8681B322B76EB300B20CB8 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		DB8681B522B7823D00B20CB8 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		DB86815622B3ACAC00B20CB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB86818022B618F800B20CB8 /* CollectionHeaderView.swift */,
 				DB86818122B618F800B20CB8 /* CollectionHeaderView.xib */,
+				DB86818022B618F800B20CB8 /* CollectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 		DB8681AE22B743F600B20CB8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DB8681AF22B7444D00B20CB8 /* RecommendVIewModel.swift */,
+				DB8681AF22B7444D00B20CB8 /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -485,7 +485,7 @@
 				DB86817D22B501B900B20CB8 /* UIColor-Extension.swift in Sources */,
 				DB8681B422B76EB300B20CB8 /* AnchorGroup.swift in Sources */,
 				DB86817522B3B38E00B20CB8 /* UIBarButtonItem-Extension.swift in Sources */,
-				DB8681B022B7444D00B20CB8 /* RecommendVIewModel.swift in Sources */,
+				DB8681B022B7444D00B20CB8 /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
