@@ -130,9 +130,7 @@ extension PageTitleView {
         // 2.获取之前Lable
         let preLable = titleLables[currentIndex]
         // 2.2排除重复点击
-        guard currentLable != preLable else {
-            return
-        }
+        if currentLable == preLable { return }
         // 3.切换Lable颜色
         currentLable.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         preLable.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)

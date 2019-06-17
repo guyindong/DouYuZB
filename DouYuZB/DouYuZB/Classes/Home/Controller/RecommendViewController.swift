@@ -11,7 +11,7 @@ import UIKit
 private let kItemMargin : CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
-private let kPrettyItemH = kItemW * 4 / 3
+private let kPrettyItemH = kItemW * 4 / 3.2
 private let kHeaderViewH : CGFloat = 50
 
 private let kNormalCellID = "kNormalCellID"
@@ -88,15 +88,26 @@ extension RecommendViewController : UICollectionViewDataSource, UICollectionView
         return group.anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // 1.定义Cell
-        var cell : UICollectionViewCell!
-        // 2.取出Cell
+        // 1.取出模型对象
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+        
+        // 2.定义Cell
+        var cell : CollectionBaseCell!
+        
+        // 3.取出Cell
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
+            
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
+            
         }
+        // 4.将模型赋值给Cell
+        cell.anchor = anchor
+        
         return cell
+        
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出section的HeaderView

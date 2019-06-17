@@ -31,6 +31,7 @@
 		DB8681B222B74ACF00B20CB8 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B122B74ACF00B20CB8 /* NSDate-Extension.swift */; };
 		DB8681B422B76EB300B20CB8 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B322B76EB300B20CB8 /* AnchorGroup.swift */; };
 		DB8681B622B7823D00B20CB8 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B522B7823D00B20CB8 /* AnchorModel.swift */; };
+		DB8681B822B7CC4100B20CB8 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B722B7CC4100B20CB8 /* CollectionBaseCell.swift */; };
 		DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */; };
 		DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512422B25B5B00D9A8BC /* Assets.xcassets */; };
 		DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512622B25B5B00D9A8BC /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		DB8681B122B74ACF00B20CB8 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		DB8681B322B76EB300B20CB8 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		DB8681B522B7823D00B20CB8 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		DB8681B722B7CC4100B20CB8 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		DBB2511A22B25B4200D9A8BC /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB2512422B25B5B00D9A8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				DB86818522B6207B00B20CB8 /* CollectionNormalCell.xib */,
 				DB86818822B654A700B20CB8 /* CollectionPrettyCell.swift */,
 				DB86818922B654A700B20CB8 /* CollectionPrettyCell.xib */,
+				DB8681B722B7CC4100B20CB8 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,12 +454,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DouYuZB/Pods-DouYuZB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,6 +479,7 @@
 				DB86817722B4E42B00B20CB8 /* PageTitleView.swift in Sources */,
 				DB86817F22B601E900B20CB8 /* RecommendViewController.swift in Sources */,
 				DB86817B22B4FE1800B20CB8 /* PageContentView.swift in Sources */,
+				DB8681B822B7CC4100B20CB8 /* CollectionBaseCell.swift in Sources */,
 				DB86818622B6207B00B20CB8 /* CollectionNormalCell.swift in Sources */,
 				DB86818A22B654A700B20CB8 /* CollectionPrettyCell.swift in Sources */,
 				DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */,
