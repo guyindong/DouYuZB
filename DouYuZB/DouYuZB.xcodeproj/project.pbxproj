@@ -34,6 +34,9 @@
 		DB8681B822B7CC4100B20CB8 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8681B722B7CC4100B20CB8 /* CollectionBaseCell.swift */; };
 		DB86826422BFA2BD00B20CB8 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86826322BFA2BD00B20CB8 /* RecommendCycleView.swift */; };
 		DB86826622BFA2E000B20CB8 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86826522BFA2E000B20CB8 /* RecommendCycleView.xib */; };
+		DB86826822C09CA100B20CB8 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86826722C09CA100B20CB8 /* CycleModel.swift */; };
+		DB86826B22C0A37400B20CB8 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86826922C0A37400B20CB8 /* CollectionCycleCell.swift */; };
+		DB86826C22C0A37400B20CB8 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86826A22C0A37400B20CB8 /* CollectionCycleCell.xib */; };
 		DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */; };
 		DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512422B25B5B00D9A8BC /* Assets.xcassets */; };
 		DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512622B25B5B00D9A8BC /* LaunchScreen.storyboard */; };
@@ -69,6 +72,9 @@
 		DB8681B722B7CC4100B20CB8 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		DB86826322BFA2BD00B20CB8 /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		DB86826522BFA2E000B20CB8 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		DB86826722C09CA100B20CB8 /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		DB86826922C0A37400B20CB8 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		DB86826A22C0A37400B20CB8 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		DBB2511A22B25B4200D9A8BC /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB2512422B25B5B00D9A8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		DB86815522B3ACAC00B20CB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB86826722C09CA100B20CB8 /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,10 +156,12 @@
 		DB86815622B3ACAC00B20CB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB86818122B618F800B20CB8 /* CollectionHeaderView.xib */,
 				DB86818022B618F800B20CB8 /* CollectionHeaderView.swift */,
+				DB86818122B618F800B20CB8 /* CollectionHeaderView.xib */,
 				DB86826322BFA2BD00B20CB8 /* RecommendCycleView.swift */,
 				DB86826522BFA2E000B20CB8 /* RecommendCycleView.xib */,
+				DB86826922C0A37400B20CB8 /* CollectionCycleCell.swift */,
+				DB86826A22C0A37400B20CB8 /* CollectionCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +429,7 @@
 				DB86816F22B3ACAC00B20CB8 /* Live.storyboard in Resources */,
 				DB86816E22B3ACAC00B20CB8 /* Profile.storyboard in Resources */,
 				DB86826622BFA2E000B20CB8 /* RecommendCycleView.xib in Resources */,
+				DB86826C22C0A37400B20CB8 /* CollectionCycleCell.xib in Resources */,
 				DB86818B22B654A700B20CB8 /* CollectionPrettyCell.xib in Resources */,
 				DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */,
 				DB86816D22B3ACAC00B20CB8 /* Follow.storyboard in Resources */,
@@ -496,7 +506,9 @@
 				DB8681AD22B73F9B00B20CB8 /* NetworkTools.swift in Sources */,
 				DB86817922B4E74500B20CB8 /* Common.swift in Sources */,
 				DB8681B222B74ACF00B20CB8 /* NSDate-Extension.swift in Sources */,
+				DB86826822C09CA100B20CB8 /* CycleModel.swift in Sources */,
 				DB86817D22B501B900B20CB8 /* UIColor-Extension.swift in Sources */,
+				DB86826B22C0A37400B20CB8 /* CollectionCycleCell.swift in Sources */,
 				DB8681B422B76EB300B20CB8 /* AnchorGroup.swift in Sources */,
 				DB86817522B3B38E00B20CB8 /* UIBarButtonItem-Extension.swift in Sources */,
 				DB8681B022B7444D00B20CB8 /* RecommendViewModel.swift in Sources */,

@@ -50,6 +50,7 @@ class RecommendViewController: UIViewController {
     private lazy var cycleView : RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
         cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+//        print(kScreenW, kCycleViewH)
         
         return cycleView
     }()
@@ -85,8 +86,14 @@ extension RecommendViewController {
 // MARK: - 请求数据
 extension RecommendViewController {
     private func loadDate() {
+        // 1.请求推荐数据
         recommendVM.requestData {
             self.collectionView.reloadData()
+        }
+        
+        // 2.请求轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }
