@@ -22,7 +22,7 @@ class CollectionCycleCell: UICollectionViewCell {
             titleLabel.text = cycleModel?.title
             let cycleURL = URL(string: cycleModel?.pic_url ?? "")!
             let resource = ImageResource(downloadURL: cycleURL)
-            cycleImageView.kf.setImage(with: resource)
+            cycleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "Img_default"))
         }
     }
     
