@@ -64,7 +64,7 @@
                 <outlet property="iconImageView" destination="Udd-t9-1NC" id="3Rg-H7-RUy"/>
                 <outlet property="titleLable" destination="YCe-BO-YHf" id="z6r-0y-A1D"/>
             </connections>
-            <point key="canvasLocation" x="-320" y="190"/>
+            <point key="canvasLocation" x="-3" y="15"/>
         </collectionReusableView>
     </objects>
     <resources>

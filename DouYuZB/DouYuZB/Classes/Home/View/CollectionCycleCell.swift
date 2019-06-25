@@ -20,9 +20,11 @@ class CollectionCycleCell: UICollectionViewCell {
     var cycleModel : CycleModel? {
         didSet {
             titleLabel.text = cycleModel?.title
-            let cycleURL = URL(string: cycleModel?.pic_url ?? "")!
-            let resource = ImageResource(downloadURL: cycleURL)
-            cycleImageView.kf.setImage(with: resource, placeholder: UIImage(named: "Img_default"))
+            guard let cycleURL = URL(string: cycleModel?.pic_url ?? "") else {
+                return
+            }
+            //let resource = ImageResource(downloadURL: cycleURL)
+            cycleImageView.kf.setImage(with: cycleURL, placeholder: UIImage(named: "Img_default"))
         }
     }
     
