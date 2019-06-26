@@ -45,6 +45,7 @@
 		DB86827822C1D7D700B20CB8 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86827722C1D7D700B20CB8 /* GameViewModel.swift */; };
 		DB86827A22C23FD200B20CB8 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86827922C23FD200B20CB8 /* GameModel.swift */; };
 		DB86827C22C24B8700B20CB8 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86827B22C24B8700B20CB8 /* BaseGameModel.swift */; };
+		DB86827E22C3B2CD00B20CB8 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86827D22C3B2CD00B20CB8 /* AmuseViewController.swift */; };
 		DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */; };
 		DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512422B25B5B00D9A8BC /* Assets.xcassets */; };
 		DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512622B25B5B00D9A8BC /* LaunchScreen.storyboard */; };
@@ -91,6 +92,7 @@
 		DB86827722C1D7D700B20CB8 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		DB86827922C23FD200B20CB8 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		DB86827B22C24B8700B20CB8 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		DB86827D22C3B2CD00B20CB8 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		DBB2511A22B25B4200D9A8BC /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB2512422B25B5B00D9A8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				DB86817122B3AD4200B20CB8 /* HomeViewController.swift */,
 				DB86817E22B601E900B20CB8 /* RecommendViewController.swift */,
 				DB86827522C1C95800B20CB8 /* GameViewController.swift */,
+				DB86827D22C3B2CD00B20CB8 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				DB8681B622B7823D00B20CB8 /* AnchorModel.swift in Sources */,
 				DB8681AD22B73F9B00B20CB8 /* NetworkTools.swift in Sources */,
 				DB86827822C1D7D700B20CB8 /* GameViewModel.swift in Sources */,
+				DB86827E22C3B2CD00B20CB8 /* AmuseViewController.swift in Sources */,
 				DB86817922B4E74500B20CB8 /* Common.swift in Sources */,
 				DB8681B222B74ACF00B20CB8 /* NSDate-Extension.swift in Sources */,
 				DB86827622C1C95800B20CB8 /* GameViewController.swift in Sources */,
