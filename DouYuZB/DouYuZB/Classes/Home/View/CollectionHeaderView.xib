@@ -26,8 +26,9 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Udd-t9-1NC">
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="IBd-FI-QLk"/>
                         <constraint firstAttribute="height" constant="18" id="ets-v8-Eyl"/>
-                        <constraint firstAttribute="width" constant="18" id="mvS-L6-ovx"/>
+                        <constraint firstAttribute="width" constant="18" id="gU1-YI-5fM"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-BO-YHf">
@@ -62,6 +63,7 @@
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
                 <outlet property="iconImageView" destination="Udd-t9-1NC" id="3Rg-H7-RUy"/>
+                <outlet property="moreBtn" destination="5ri-RM-070" id="fEv-Mz-iUJ"/>
                 <outlet property="titleLable" destination="YCe-BO-YHf" id="z6r-0y-A1D"/>
             </connections>
             <point key="canvasLocation" x="-3" y="15"/>

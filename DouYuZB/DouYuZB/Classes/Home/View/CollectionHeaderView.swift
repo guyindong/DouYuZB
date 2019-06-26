@@ -15,6 +15,7 @@ class CollectionHeaderView: UICollectionReusableView {
     
     @IBOutlet var titleLable: UILabel!
     @IBOutlet var iconImageView: UIImageView!
+    @IBOutlet weak var moreBtn: UIButton!
     
     // MARK: - 模型属性
     var group : AnchorGroup? {
@@ -32,4 +33,11 @@ class CollectionHeaderView: UICollectionReusableView {
         }
     }
     
+}
+
+// MARK: - 从Xib中快速创建的类方法
+extension CollectionHeaderView {
+    class func collectionHeaderView() -> CollectionHeaderView {
+        return Bundle.main.loadNibNamed("CollectionHeaderView", owner: nil, options: nil)?.first as! CollectionHeaderView
+    }
 }
