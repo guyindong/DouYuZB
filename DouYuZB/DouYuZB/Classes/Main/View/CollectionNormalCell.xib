@@ -19,6 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="337" height="229"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a85-SQ-u8z">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="200"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="QFp-H4-Dj6">
                         <rect key="frame" x="0.0" y="205" width="14" height="14"/>
                         <constraints>
@@ -39,19 +48,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-DV-2fg">
-                        <rect key="frame" x="248" y="178" width="84" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="262" y="179" width="70" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="200W在线" image="Image_online"/>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a85-SQ-u8z">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="200"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
                 </subviews>
             </view>
             <constraints>

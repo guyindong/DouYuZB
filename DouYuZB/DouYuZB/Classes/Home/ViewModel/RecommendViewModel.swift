@@ -8,9 +8,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     // MARK: - 懒加载属性
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     lazy var cycleModels : [CycleModel] = [CycleModel]()
     private lazy var hot_anchorGroups : AnchorGroup = AnchorGroup()
     private lazy var pretty_anchorGroups : AnchorGroup = AnchorGroup()
@@ -80,31 +79,10 @@ extension RecommendViewModel {
         // 3. 请求第三部分数据
         disGroup.enter()
         // http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1560755532
-        //print(NSDate.getCurrentTime() as NSString)
-        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
-            //print(result)
-            // 1.将result转成字典类型
-            guard let resultDict = result as? [String : NSObject] else { return }
-            //print(resultDict)
-            // 2.根据data-kay,获取数组
-            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
-            //print(dataArray)
-            // 3.遍历数组，获取字典，并且将字典转成模型对象
-            for dict in dataArray {
-                let group = AnchorGroup(dict: dict)
-                self.anchorGroups.append(group)
-            }
-            /*
-            for group in self.anchorGroups {
-                for anchor in group.anchors {
-                    print(anchor.nickname)
-                }
-                print("-----")
-            }
-            */
+        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", paremeters: parameters) {
             disGroup.leave()
-            
         }
+        
         // 0.2 所有的数据都请求道，之后进行排序
         disGroup.notify(queue: .main) {
             self.anchorGroups.insert(self.pretty_anchorGroups, at: 0)
