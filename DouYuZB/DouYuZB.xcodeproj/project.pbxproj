@@ -53,6 +53,8 @@
 		DB86828922C4F02E00B20CB8 /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86828822C4F02E00B20CB8 /* AmuseMenuView.xib */; };
 		DB86828C22C5021200B20CB8 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86828A22C5021200B20CB8 /* AmuseMenuViewCell.swift */; };
 		DB86828D22C5021200B20CB8 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86828B22C5021200B20CB8 /* AmuseMenuViewCell.xib */; };
+		DB86828F22C7A3B100B20CB8 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86828E22C7A3B100B20CB8 /* FunnyViewController.swift */; };
+		DB86829122C7A6F600B20CB8 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86829022C7A6F600B20CB8 /* FunnyViewModel.swift */; };
 		DBB2511E22B25B4200D9A8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */; };
 		DBB2512522B25B5B00D9A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512422B25B5B00D9A8BC /* Assets.xcassets */; };
 		DBB2512822B25B5B00D9A8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB2512622B25B5B00D9A8BC /* LaunchScreen.storyboard */; };
@@ -107,6 +109,8 @@
 		DB86828822C4F02E00B20CB8 /* AmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		DB86828A22C5021200B20CB8 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		DB86828B22C5021200B20CB8 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		DB86828E22C7A3B100B20CB8 /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		DB86829022C7A6F600B20CB8 /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		DBB2511A22B25B4200D9A8BC /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB2511D22B25B4200D9A8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB2512422B25B5B00D9A8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				DB86817E22B601E900B20CB8 /* RecommendViewController.swift */,
 				DB86827522C1C95800B20CB8 /* GameViewController.swift */,
 				DB86827D22C3B2CD00B20CB8 /* AmuseViewController.swift */,
+				DB86828E22C7A3B100B20CB8 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				DB8681AF22B7444D00B20CB8 /* RecommendViewModel.swift */,
 				DB86827722C1D7D700B20CB8 /* GameViewModel.swift */,
 				DB86827F22C47D3D00B20CB8 /* AmuseViewModel.swift */,
+				DB86829022C7A6F600B20CB8 /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				DB86827822C1D7D700B20CB8 /* GameViewModel.swift in Sources */,
 				DB86827E22C3B2CD00B20CB8 /* AmuseViewController.swift in Sources */,
 				DB86817922B4E74500B20CB8 /* Common.swift in Sources */,
+				DB86828F22C7A3B100B20CB8 /* FunnyViewController.swift in Sources */,
 				DB8681B222B74ACF00B20CB8 /* NSDate-Extension.swift in Sources */,
 				DB86827622C1C95800B20CB8 /* GameViewController.swift in Sources */,
 				DB86826E22C0B9CD00B20CB8 /* RecommendGameView.swift in Sources */,
@@ -584,6 +591,7 @@
 				DB86828C22C5021200B20CB8 /* AmuseMenuViewCell.swift in Sources */,
 				DB86817522B3B38E00B20CB8 /* UIBarButtonItem-Extension.swift in Sources */,
 				DB8681B022B7444D00B20CB8 /* RecommendViewModel.swift in Sources */,
+				DB86829122C7A6F600B20CB8 /* FunnyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

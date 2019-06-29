@@ -13,15 +13,26 @@ class BaseViewModel {
 }
 
 extension BaseViewModel {
-    func loadAnchorData(URLString : String, paremeters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
+    func loadAnchorData(isGroupsData : Bool = true, URLString : String, paremeters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
         NetworkTools.requestData(type: .GET, URLString: URLString, parameters: paremeters) { (result) in
             
             guard let resultDict = result as? [String : Any] else { return}
             guard let dataArray = resultDict["data"] as? [[String : Any]] else {return}
             
-            for dict in dataArray {
-                self.anchorGroups.append(AnchorGroup(dict: dict))
+            // 判断是否是分组数据
+            if isGroupsData {
+                for dict in dataArray {
+                    self.anchorGroups.append(AnchorGroup(dict: dict))
+                }
+            } else {
+                let group = AnchorGroup()
+                for dict in dataArray {
+                    group.anchors.append(AnchorModel(dict: dict))
+                }
+                self.anchorGroups.append(group)
             }
+            
+            
             finishedCallback()
         }
     }
